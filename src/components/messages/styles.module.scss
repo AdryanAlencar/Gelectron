@@ -1,0 +1,112 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: #333 1px solid;
+    width: 100%;
+    flex: 1;
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: 1;
+            color: #fff;
+        }
+
+        .actions{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1;
+
+            button{
+                border: none;
+                background-color: transparent;
+                font-size: 0.8rem;
+                color: #333;
+                cursor: pointer;
+
+                &.apply{
+                    color: #4CAF50;
+                }
+
+                &.cancel{
+                    color: #F44336;
+                }
+
+            }
+        }
+    }
+
+    .edit{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: 1;
+        width: 100%;
+
+        textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 5px;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: transparent;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px;
+
+            button{
+                border: none;
+                background-color: transparent;
+                font-size: 0.8rem;
+                color: #fff;
+                cursor: pointer;
+
+                &.save{
+                    color: #4CAF50;
+                }
+
+                &.cancel{
+                    color: #F44336;
+                }
+
+            }
+        }
+    }
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+    box-sizing: border-box;
+}

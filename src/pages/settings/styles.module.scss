@@ -37,10 +37,46 @@
             }
 
         }
+
+        .Buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            width: min-content;
+            height: 100%;
+            width: 80%;
+        }
     }
 
     .Content{
         flex: 1;
+        width: 70%;
+        margin-top: 20px;
+
+        .Row{
+            flex: 1 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: start;
+
+            .Col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+
+                .Photo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+
+        }
 
         .FormGroup{
             display: flex;
@@ -49,6 +85,7 @@
             justify-content: start;
             border-radius: 10px;
             margin-top: 10px;
+            width: 100%;
 
             label{
                 font-size: 1.2rem;
@@ -63,6 +100,7 @@
                 border-radius: 5px;
                 border: 1px solid #191622;
                 padding: 0px 10px;
+                box-sizing: border-box;
                 font-size: 1.2rem;
                 font-weight: 300;
                 color: #fff;
@@ -81,6 +119,7 @@
         background: #7CD609;
         border: none;
         padding: 10px 5px;
+        box-sizing: border-box;
 
         font-family: 'Inter';
         font-style: normal;
@@ -107,6 +146,7 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
+        box-sizing: border-box;
         margin-top: 20px;
 
         button{

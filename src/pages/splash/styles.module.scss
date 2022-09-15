@@ -1,0 +1,27 @@
+.splash{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #44475A;
+
+    .title{
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .subtitle{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+}

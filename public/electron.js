@@ -8,7 +8,7 @@ initialize();
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 800,
+    width: 1098,
     height: 600,
     webPreferences: {
         nodeIntegration: true, // to allow require

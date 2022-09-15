@@ -1,0 +1,100 @@
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+
+    .profile{
+        max-width: 50px;
+        display: flex;
+        cursor: pointer;
+
+        img{
+            border-radius: 100%;
+            width: 100%;
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1;
+
+        .span{
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .username{
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .edit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1;
+
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #fff;
+            padding: 5px 0;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: transparent;
+
+            &:focus{
+                outline: none;
+            }
+
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 100%;
+
+            button{
+                border: none;
+                background-color: transparent;
+                font-size: 0.8rem;
+                color: #333;
+                cursor: pointer;
+
+                &.save{
+                    color: #4CAF50;
+                }
+
+                &.cancel{
+                    color: #F44336;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.userList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: min-content;
+    height: min-content;
+}
